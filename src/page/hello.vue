@@ -1,10 +1,10 @@
 <template>
-  <div>hhhhhhhhYYYYY</div>
+  <div>首页</div>
 </template>
 
 <script>
 export default {
-  name: 'SalaryManage',
+  name: 'Hello',
   data () {
     return {
     }

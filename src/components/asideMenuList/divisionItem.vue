@@ -6,14 +6,18 @@
           <span>部门管理</span>
       </template>
       <el-menu-item-group>
+        <router-link to="/divisionAdd">
           <el-menu-item index="1-1">
             <i class="el-icon-add-location"></i>
-            <router-link to="/divisionAdd">新增部门</router-link>
+            <span slot="title">新增部门</span>
           </el-menu-item>
+        </router-link>
+        <router-link to="/divisionManage">
           <el-menu-item index="1-2">
             <i class="el-icon-guide"></i>
-            <router-link to="/divisionManage">管理部门</router-link>
+            <span slot="title">管理部门</span>
           </el-menu-item>
+        </router-link>
       </el-menu-item-group>
     </el-submenu>
   </div>

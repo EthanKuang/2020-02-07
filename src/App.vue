@@ -1,12 +1,13 @@
 <template>
   <el-container>
-    <el-header>
-      <header-menu></header-menu>
-    </el-header>
+    <el-aside width="200px">
+      <aside-menu></aside-menu>
+    </el-aside>
+
     <el-container>
-      <el-aside width="200px">
-        <aside-menu></aside-menu>
-      </el-aside>
+      <el-header height="56px">
+        <header-menu></header-menu>
+      </el-header>
       <el-main>
         <router-view></router-view>
       </el-main>
@@ -15,8 +16,8 @@
 </template>
 
 <script>
-import AsideMenuComponent from './components/elContainer/asideMenu'
-import HeaderMenuComponent from './components/elContainer/headerMenu'
+import AsideMenuComponent from './components/asideMenu'
+import HeaderMenuComponent from './components/headerMenu'
 export default {
   name: 'App',
   components: {
@@ -26,18 +27,37 @@ export default {
 }
 </script>
 
-<style>
+<style type="text/css">
+  /*
+    找到html标签、body标签，和挂载的标签
+    都给他们统一设置样式
+  */
+  html,body,#app,.el-container{
+    /*设置内部填充为0，几个布局元素之间没有间距*/
+    padding: 0px;
+      /*外部间距也是如此设置*/
+    margin: 0px;
+    /*统一设置高度为100%*/
+    height: 100%;
+  }
   .el-header {
-    background-color: #B3C0D1;
+    background-color: #cedcde;
   }
   .el-aside {
-    background-color: #D3DCE6;
-    height: 546px;
+    background-color: #324057;
   }
   .el-main {
-    background-color: #E9EEF3;
   }
   .el-col {
     width: 200px;
+  }
+  .el-menu-item {
+    width: 200px;
+  }
+  .el-submenu {
+    width: 200px;
+  }
+  a {
+    text-decoration-line: none;
   }
 </style>

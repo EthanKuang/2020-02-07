@@ -1,5 +1,5 @@
 <template>
-  <div>hhhhhhhDDDDDDh</div>
+  <div>管理部门</div>
 </template>
 
 <script>

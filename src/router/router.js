@@ -1,17 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Notice from '../components/routerLink/notice'
-import DivisionAdd from '../components/routerLink/divisionAdd'
-import DivisionManage from '../components/routerLink/divisionManage'
-import StaffAdd from '../components/routerLink/staffAdd'
-import StaffManage from '../components/routerLink/staffManage'
-import FinancialState from '../components/routerLink/financialState'
-import SalaryManage from '../components/routerLink/salaryManage'
-import ResignApplication from '../components/routerLink/resignApplication'
+import Hello from '../page/hello'
+import Notice from '../page/notice'
+import DivisionAdd from '../page/divisionAdd'
+import DivisionManage from '../page/divisionManage'
+import StaffAdd from '../page/staffAdd'
+import StaffManage from '../page/staffManage'
+import FinancialState from '../page/financialState'
+import SalaryManage from '../page/salaryManage'
+import ResignApplication from '../page/resignApplication'
+import Setting from '../page/setting'
+import LogOut from '../page/logOut'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {path: '/hello', component: Hello},
   {path: '/notice', component: Notice},
   {path: '/divisionAdd', component: DivisionAdd},
   {path: '/divisionManage', component: DivisionManage},
@@ -19,7 +23,9 @@ const routes = [
   {path: '/staffManage', component: StaffManage},
   {path: '/financialState', component: FinancialState},
   {path: '/salaryManage', component: SalaryManage},
-  {path: '/resignApplication', component: ResignApplication}
+  {path: '/resignApplication', component: ResignApplication},
+  {path: '/setting', component: Setting},
+  {path: '/logOut', component: LogOut}
 ]
 
 const router = new VueRouter({

@@ -1,10 +1,10 @@
 <template>
-  <div>hhhhhhhh</div>
+  <div>设置</div>
 </template>
 
 <script>
 export default {
-  name: 'Notice',
+  name: 'Setting',
   data () {
     return {
     }

@@ -1,10 +1,10 @@
 <template>
-  <div>hhhhhhhh</div>
+  <div>财务报表</div>
 </template>
 
 <script>
 export default {
-  name: 'ResignApplication',
+  name: 'FinancialState',
   data () {
     return {
     }

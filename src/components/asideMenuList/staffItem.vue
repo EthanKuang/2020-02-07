@@ -6,14 +6,18 @@
           <span>员工管理</span>
       </template>
       <el-menu-item-group>
+        <router-link to="/staffAdd">
           <el-menu-item index="2-1">
             <i class="el-icon-plus"></i>
-            <router-link to="/staffAdd">新增员工</router-link>
+            <span slot="title">新增员工</span>
           </el-menu-item>
+        </router-link>
+        <router-link to="/staffManage">
           <el-menu-item index="2-2">
             <i class="el-icon-refresh-right"></i>
-            <router-link to="/staffManage">管理员工</router-link>
+            <span slot="title">管理员工</span>
           </el-menu-item>
+        </router-link>
       </el-menu-item-group>
     </el-submenu>
   </div>

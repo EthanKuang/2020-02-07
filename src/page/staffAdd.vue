@@ -100,6 +100,36 @@ export default {
     }
   },
   methods: {
+    // getName (iden) {
+    //   let val = iden.length
+    //   let sex = null
+    //   let myDate = new Date()
+    //   let month = myDate.getMonth() + 1
+    //   let day = myDate.getDate()
+    //   let age = 0
+
+    //   if (val === 18) {
+    //     age = myDate.getFullYear() - iden.substring(6, 10) - 1
+    //     sex = iden.substring(16, 17)
+    //     if (iden.substring(10, 12) < month || iden.substring(10, 12)
+    //     == month && iden.substring(12, 14) <= day) age++
+    //   }
+    //   if (val === 15) {
+    //     age = myDate.getFullYear() - iden.substring(6, 8) - 1901
+    //     sex = iden.substring(13, 14)
+    //     if (iden.substring(8, 10) < month || iden.substring(8, 10)
+    //     == month && iden.substring(10, 12) <= day) age++
+    //   }
+
+    //   if (sex % 2 === 0)
+    //     sex = 1
+    //   else
+    //     sex = 0
+    //   this.ruleForm.sex = sex
+    //   this.ruleForm.age = age
+
+    //   this.getDataInfo();
+    // },
     submitForm (formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {

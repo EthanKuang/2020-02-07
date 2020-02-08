@@ -1,10 +1,10 @@
 <template>
-  <div>hhhhhhhDDDDDDh</div>
+  <div>辞职申请</div>
 </template>
 
 <script>
 export default {
-  name: 'DivisionAdd',
+  name: 'ResignApplication',
   data () {
     return {
     }

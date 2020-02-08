@@ -1,10 +1,10 @@
 <template>
-  <div>hhhhhhhhXXX</div>
+  <div>薪资管理</div>
 </template>
 
 <script>
 export default {
-  name: 'FinancialState',
+  name: 'SalaryManage',
   data () {
     return {
     }
